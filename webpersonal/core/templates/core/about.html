@@ -1,0 +1,25 @@
+{% extends 'core/base.html' %}
+
+{% block title %}Acerca de{% endblock %}
+
+{% block background %}{% load static %}{% static 'core/img/about-bg.jpg' %}{% endblock %}
+
+{% block headers %}
+<h1>Acerca de</h1>
+<span class="subheading">Biografía</span>
+{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-lg-3 col-md-4 offset-lg-1">
+        <img class="img-fluid avatar" src="{% static 'core/img/joan.jpg' %}" alt="">
+    </div>
+    <div class="col-lg-7 col-md-8">
+        <h2 class="section-heading">Joan Marín</h2>   
+        <p>Soy Licenciado en Geología por la Universitat Autònoma de Barcelona, con Master en Dirección y Administración de Empresas por la ENEB de Barcelona y actualmente estudiando Ingeniería Informática en la Universitat Oberta de Catalunya.</p>
+        <p>Me dedico, desde el año 2006, a la instrumentación y auscultación, tanto geotécnica como estructural.</p>
+        <p>He participado en grandes proyectos de auscultación urbana como son los de la L9 del Metro de Barcelona, y la L2 del Metro de Lima.</p>
+        <p>Me apasiona exprimir el potencial de los datos desarrollando herramientas de análisis y siempre intento actualizarme con los últimos avances tecnológicos.</p>
+    </div>
+</div>
+{% endblock %}
